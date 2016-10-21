@@ -10,10 +10,19 @@
 namespace Album\Controller;
 
 
+use Album\Model\Repository\AlbumRepository;
 use Zend\Mvc\Controller\AbstractActionController;
 
 class AlbumController extends AbstractActionController
 {
+    /** @var  AlbumRepository */
+    protected $albumRepo;
+
+    public function __construct(AlbumRepository $albumRepo)
+    {
+        $this->albumRepo = $albumRepo;
+    }
+
     public function indexAction()
     {
 

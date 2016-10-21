@@ -2,6 +2,7 @@
 
 namespace Album;
 
+use Album\Controller\Factory\AlbumControllerFactory;
 use Doctrine\ORM\Mapping\Driver\AnnotationDriver;
 use Zend\Router\Http\Segment;
 use Zend\ServiceManager\Factory\InvokableFactory;
@@ -9,7 +10,7 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 return [
     'controllers' => [
         'factories' => [
-            Controller\AlbumController::class => InvokableFactory::class,
+            Controller\AlbumController::class => AlbumControllerFactory::class,
         ],
     ],
     'router' => [
