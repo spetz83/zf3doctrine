@@ -21,6 +21,10 @@
         <?= $this->headScript()
             ->prependFile($this->basePath('js/bootstrap.min.js'))
             ->prependFile($this->basePath('js/jquery-3.1.0.min.js'))
+            ->appendFile($this->basePath('js/angular/angular.min.js'))
+            ->appendFile($this->basePath('js/angular/angular-route.min.js'))
+            ->appendFile($this->basePath('js/angular/angular-resource.min.js'))
+            ->appendFile($this->basePath('js/angular/angular-animate.min.js'));
         ?>
     </head>
     <body>
