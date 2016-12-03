@@ -24,8 +24,9 @@ return [
     'Zend\Db',
     'Zend\Router',
     'Zend\Validator',
-    'Application',
-    'Album',
+    'AssetManager',
     'DoctrineModule',
     'DoctrineORMModule',
+    'Application',
+    'Album',
 ];
